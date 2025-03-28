@@ -1,17 +1,18 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Robert De Niro Portfolio</title>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 <body>
+
+  <!-- Navigation Menu -->
   <nav id="menu">
     <div class="logo">
-      <img src="images/logo.png" alt="Logo">
+      <img src="images/logo.png" alt="Logo" />
     </div>
     <div class="spacer"></div>
     <ul>
@@ -20,70 +21,61 @@
       <li><a href="#playlist">My Playlist</a></li>
       <li><a href="#like-section">Like</a></li>
       <li><a href="#qrcoder">QR Code</a></li>
-      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#spa">Q&amp;A</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
     <div class="spacer"></div>
   </nav>
-		  
-<section id="about" class="section">
-</br>
-</br> 
-</br>
-<h1 class="section-title"> About Me</h1>
-<p class="about-text">
-  Robert De Niro (81) is one of the most famous and talented actors in the world.
-  He became well-known for his roles in movies like <i>Taxi Driver</i>, <i>Raging Bull</i>,
-  and <i>The Godfather Part II</i>. He has won many important awards,
-  including two Oscars. Besides acting, Robert De Niro also directs and produces films,
-  and he helped create the Tribeca Film Festival.
-  He is known for his serious acting style and his big impact on the movie industry.
-</p>
 
-</section>
+  </br>
+  </br>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h1 class="section-title">About Me</h1>
+    <p class="about-text">
+      Robert De Niro (81) is one of the most famous and talented actors in the world. He became well-known for his roles in movies like
+      <i>Taxi Driver</i>, <i>Raging Bull</i>, and <i>The Godfather Part II</i>. He has won many important awards, including two Oscars.
+      Besides acting, Robert De Niro also directs and produces films, and he helped create the Tribeca Film Festival.
+      He is known for his serious acting style and his big impact on the movie industry.
+    </p>
+  </section>
 
-
-
-<section id="photos">
-<h1 class="section-title">Photos</h1>
-
-  <div class="slider-wrapper">
-    <button class="nav-button" id="left-button">&#8592;</button>
-
-    <div class="slider-container" id="slider">
-      <img src="images/image1.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image2.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image3.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image4.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image5.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image6.jpg" class="aligned-img" alt="Robert De Niro">
-      <img src="images/image7.jpg" class="aligned-img" alt="Robert De Niro">
+  <!-- Photos Section -->
+  <section id="photos" class="section">
+    <h1 class="section-title">Photos</h1>
+    <div class="slider-wrapper">
+      <button class="nav-button" id="left-button">&#8592;</button>
+      <div class="slider-container" id="slider">
+        <img src="images/image1.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image2.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image3.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image4.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image5.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image6.jpg" class="aligned-img" alt="Robert De Niro" />
+        <img src="images/image7.jpg" class="aligned-img" alt="Robert De Niro" />
+      </div>
+      <button class="nav-button" id="right-button">&#8594;</button>
     </div>
+  </section>
 
-    <button class="nav-button" id="right-button">&#8594;</button>
-  </div>
-</section>
+  <!-- Playlist Section -->
+  <section id="playlist" class="section">
+    <h1 class="section-title">Favorite Song</h1>
+    <div class="video-container">
+      <iframe 
+        width="800" 
+        height="450" 
+        src="https://www.youtube.com/embed/zp5H6FVQlw4?si=8vdLGf3e7r6lkIjX&amp;start=59" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-
-
-<section id="playlist" >
-<h1 class="section-title">Favorite Song</h1>
-<div class="video-container">
-  <iframe width="800" height="450"
-    src="https://www.youtube.com/embed/zp5H6FVQlw4?si=8vdLGf3e7r6lkIjX&amp;start=59"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-
-</iframe>
-
-</section>
-
-  <h1 class="section-title">Like</h1>
-  <section id="like-section">
+  <!-- Like Section -->
+  <section id="like-section" class="section">
     <h2 class="section-title">Show Some Love For Robert ❤️</h2>
     <div class="like-box">
       <button class="like-button" id="likeButton">
@@ -92,114 +84,74 @@
     </div>
   </section>
 
-<section id="qrcoder" class="section">
-<h1 class="section-title">QR Code</h1>
-  <div class="qr-box">
-    <img src="images/qr code.png" alt="Scan this QR Code">
-    <p>Scan this code to visit my profile!</p>
-  </div>
-</section>
-
-<section id="spa" class="section">
-  <h1 class="section-title">Q&A</h1>
-  <section id="web-comparison">
-    <h2 class="fancy-title">Web versions comparison</h2>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Web 1.0<br><small>(1990–2000)</small></th>
-            <th>Web 2.0<br><small>(2000–2015+)</small></th>
-            <th>Web 3.0<br><small>(2015+)</small></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Content</td>
-            <td>Static pages, basic design (frames/tables)</td>
-            <td>User-generated content (blogs, wikis, social media)</td>
-            <td>Semantic, decentralized, AI-generated content</td>
-          </tr>
-          <tr>
-            <td>Interaction</td>
-            <td>Read-only, not interactive</td>
-            <td>Interactive, user participation (likes, comments)</td>
-            <td>Smart contracts, DAOs, decentralized interaction</td>
-          </tr>
-          <tr>
-            <td>Technology</td>
-            <td>HTML, limited CSS, no JavaScript frameworks</td>
-            <td>AJAX, APIs, JavaScript libraries, cloud</td>
-            <td>Blockchain, Web3 APIs, AI/NLP, semantic web</td>
-          </tr>
-          <tr>
-            <td>Search</td>
-            <td>Basic, inaccurate search</td>
-            <td>Improved search with tags and social curation</td>
-            <td>Semantic search, context-aware queries</td>
-          </tr>
-          <tr>
-            <td>Ownership</td>
-            <td>Centralized by companies</td>
-            <td>Controlled by platforms (Big Tech)</td>
-            <td>Users own data via decentralized networks</td>
-          </tr>
-          <tr>
-            <td>Examples</td>
-            <td>GeoCities, early Yahoo, personal web pages</td>
-            <td>Facebook, YouTube, Wikipedia, Twitter</td>
-            <td>Ethereum, IPFS, IBM Watson, dApps</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <h2 class="fancy-title-use-case">Use Case</h2>
-    <div class="table-container use-case-block">
-    
-      <div class="use-case-item">
-        <h3>🌐 Web 1.0</h3>
-        <p>You find a <strong>static website</strong> with general drug info written by an author.<br>
-        No user feedback, no updates, just plain content.<br>
-        <em>Example:</em> CNN article or a medical info page.</p>
-      </div>
-  
-      <div class="use-case-item">
-        <h3>🌐 Web 2.0</h3>
-        <p>You <strong>Google</strong> “Acamol side effects” and get results from 
-        <strong>forums, blogs, and Wikipedia</strong>.<br>
-        Other users share their experience, but it’s scattered and unverified.<br>
-        <em>Example:</em> Yahoo Answers, Reddit, YouTube.</p>
-      </div>
-  
-      <div class="use-case-item">
-        <h3>🌐 Web 3.0</h3>
-        <p>You ask an AI-driven system “What are Acamol side effects for 30-year-olds?”<br>
-        It searches a <strong>semantic medical database</strong> built from millions of user posts and gives a smart answer.<br>
-        <em>Example:</em> FirstLifeResearch, IBM Watson.</p>
-      </div>
-  
+  <!-- QR Code Section -->
+  <section id="qrcoder" class="section">
+    <h1 class="section-title">QR Code</h1>
+    <div class="qr-box">
+      <img src="images/qr code.png" alt="Scan this QR Code" />
+      <p>Scan this code to visit my profile!</p>
     </div>
   </section>
+
+  <!-- Web Comparison & Use Case Section -->
+  <section id="spa" class="section">
+    <h1 class="section-title">Q&amp;A</h1>
+    <section id="web-comparison">
+      <h2 class="fancy-title">Web versions comparison</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Web 1.0<br /><small>(1990–2000)</small></th>
+              <th>Web 2.0<br /><small>(2000–2015+)</small></th>
+              <th>Web 3.0<br /><small>(2015+)</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Content</td><td>Static pages, basic design (frames/tables)</td><td>User-generated content (blogs, wikis, social media)</td><td>Semantic, decentralized, AI-generated content</td></tr>
+            <tr><td>Interaction</td><td>Read-only, not interactive</td><td>Interactive, user participation (likes, comments)</td><td>Smart contracts, DAOs, decentralized interaction</td></tr>
+            <tr><td>Technology</td><td>HTML, limited CSS, no JavaScript frameworks</td><td>AJAX, APIs, JavaScript libraries, cloud</td><td>Blockchain, Web3 APIs, AI/NLP, semantic web</td></tr>
+            <tr><td>Search</td><td>Basic, inaccurate search</td><td>Improved search with tags and social curation</td><td>Semantic search, context-aware queries</td></tr>
+            <tr><td>Ownership</td><td>Centralized by companies</td><td>Controlled by platforms (Big Tech)</td><td>Users own data via decentralized networks</td></tr>
+            <tr><td>Examples</td><td>GeoCities, early Yahoo, personal web pages</td><td>Facebook, YouTube, Wikipedia, Twitter</td><td>Ethereum, IPFS, IBM Watson, dApps</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="fancy-title-use-case">Use Case</h2>
+      <div class="table-container use-case-block">
+        <div class="use-case-item">
+          <h3>🌐 Web 1.0</h3>
+          <p>You find a <strong>static website</strong> with general drug info written by an author.<br>No user feedback, no updates, just plain content.<br><em>Example:</em> CNN article or a medical info page.</p>
+        </div>
+        <div class="use-case-item">
+          <h3>🌐 Web 2.0</h3>
+          <p>You <strong>Google</strong> “Acamol side effects” and get results from <strong>forums, blogs, and Wikipedia</strong>.<br>Other users share their experience, but it’s scattered and unverified.<br><em>Example:</em> Yahoo Answers, Reddit, YouTube.</p>
+        </div>
+        <div class="use-case-item">
+          <h3>🌐 Web 3.0</h3>
+          <p>You ask an AI-driven system “What are Acamol side effects for 30-year-olds?”<br>It searches a <strong>semantic medical database</strong> built from millions of user posts and gives a smart answer.<br><em>Example:</em> FirstLifeResearch, IBM Watson.</p>
+        </div>
+      </div>
+    </section>
   </section>
 
-
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <h1 class="section-title">Contact Me</h1>
-  
     <form action="https://formspree.io/f/mblgagbz" method="POST" class="contact-form">
-      
       <label for="email">Your Email:</label>
-      <input type="email" name="email" id="email" required>
-  
+      <input type="email" id="email" name="email" required />
+
       <label for="subject">Subject:</label>
-      <select name="subject" id="subject" required>
+      <select id="subject" name="subject" required>
         <option value="">-- Choose a subject --</option>
         <option value="Feedback">Feedback</option>
         <option value="Collaboration">Collaboration</option>
         <option value="Bug Report">Bug Report</option>
       </select>
-  
+
       <label for="emoji-picker">Add Emoji:</label>
       <select id="emoji-picker">
         <option value="">😊 Choose an emoji</option>
@@ -212,32 +164,16 @@
         <option value="😢">😢</option>
         <option value="🤔">🤔</option>
       </select>
-  
+
       <label for="message">Your Message:</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
-  
-      <!-- Bot Protection -->
-      <input type="hidden" name="_captcha" value="false">
-  
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false" />
+
       <button type="submit">Send</button>
     </form>
   </section>
 
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
