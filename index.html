@@ -2,128 +2,94 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
+  <nav id="menu">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="spacer"></div>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like-section">Like</a></li>
+      <li><a href="#qrcoder">QR Code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    <div class="spacer"></div>
+  </nav>
 		  
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
+<h1 class="section-title"> About Me</h1>
+<p class="about-text">
+  Robert De Niro (81) is one of the most famous and talented actors in the world.
+  He became well-known for his roles in movies like <i>Taxi Driver</i>, <i>Raging Bull</i>,
+  and <i>The Godfather Part II</i>. He has won many important awards,
+  including two Oscars. Besides acting, Robert De Niro also directs and produces films,
+  and he helped create the Tribeca Film Festival.
+  He is known for his serious acting style and his big impact on the movie industry.
+</p>
+
+
+<section id="photos">
+<h1 class="section-title">Photos</h1>
+
+  <div class="slider-wrapper">
+    <button class="nav-button" id="left-button">&#8592;</button>
+
+    <div class="slider-container" id="slider">
+      <img src="Image1.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image2.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image3.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image4.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image5.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image6.jpg" class="aligned-img" alt="Robert De Niro">
+      <img src="Image7.jpg" class="aligned-img" alt="Robert De Niro">
+    </div>
+
+    <button class="nav-button" id="right-button">&#8594;</button>
+  </div>
 </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+
+
+<section id="playlist" >
+<h1 class="section-title">Favorite Song</h1>
+<div class="video-container">
+  <iframe width="800" height="450"
+    src="https://www.youtube.com/embed/zp5H6FVQlw4?si=8vdLGf3e7r6lkIjX&amp;start=59"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+</iframe>
+
 </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+  <h1 class="section-title">Like</h1>
+  <section id="like-section">
+    <h2 class="section-title">Show Some Love For Robert ❤️</h2>
+    <div class="like-box">
+      <button class="like-button" id="likeButton">
+        ❤️ <span id="likeCount">0</span> Likes
+      </button>
+    </div>
+  </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+<h1 class="section-title">QR Code</h1>
+
 <br/>
 <br/>
 <br/>
@@ -189,5 +155,6 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <script src="script.js"></script>
 </body>
 </html>

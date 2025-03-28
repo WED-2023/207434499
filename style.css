@@ -1,7 +1,216 @@
-#menu
-{
+
+html {
+	scroll-padding-top: 120px; /* or the height of your fixed menu */
+	scroll-behavior: smooth;
+  }
+
+  #menu {
+	background-color: #00aaff;
 	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
+	z-index: 999;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	gap:30px; /* space between logo and menu */
+  }
+  
+  #menu ul {
+	list-style: none;
+	display: flex;               /* Makes items line up horizontally */
+	justify-content: center;     /* Centers the items */
+	gap: 30px;                   /* Space between each item */
+	margin: 0;
+	padding: 0;
+  }
+  
+  #menu li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 8px 12px;
+	border-radius: 6px;
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #menu li a:hover {
+	background-color: white;
+	color: #00aaff;
+  }
+  .spacer {
+	flex: 1;
+  } 
+
+  #menu .logo img {
+	height: 75px;
+	width: auto;
+  	object-fit: contain;
+	margin-left: -30px;
+  }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+  }
+
+.about-text {
+	text-align: left;
+	margin-left: 50px; 
+	max-width: 1500px;         /* controls line length */
+  	padding-left: 60px;        /* space from the left edge */
+  	padding-right: 40px; 
+	line-height: 1.6;
+	font-size: 25px;
+  }
+
+.section-title {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 40px 0 20px;
+  }
+
+.section-title::before,
+.section-title::after {
+content: '';
+flex: 1;
+border-bottom: 3px solid #00aaff;
+margin: 0 10px;
 }
+
+.image-row {
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* space between the images */
+	align-items: center;
+	margin-top: 30px;
+  }
+  
+  .aligned-img {
+	height: 300px;     /* same height */
+	object-fit: cover; /* crop image to fill size while keeping it neat */
+	border-radius: 8px;
+  }
+
+
+/* Photo Galery */
+.slider-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+  }
+  
+  .slider-container {
+	display: flex;
+	gap: 15px;
+	width: 1300px; /* approx 4 images */
+	overflow: hidden;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+  }
+  
+  .aligned-img {
+	width: 310px;
+	height: 325px;
+	object-fit: cover;
+	border-radius: 10px;
+	flex-shrink: 0;
+	scroll-snap-align: start;
+  }
+  
+  /* Hide scrollbar (works on most browsers) */
+  .slider-container::-webkit-scrollbar {
+	display: none;
+  }
+  .slider-container {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;     /* Firefox */
+  }
+  
+  .nav-button {
+	background-color: #00aaff;
+	border: none;
+	color: white;
+	font-size: 24px;
+	padding: 12px 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-button:hover {
+	background-color: #0077cc;
+	transform: scale(1.1);
+  }
+  
+  .nav-button:active {
+	transform: scale(0.95);
+  }
+
+
+  .video-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Like button */
+#like-section {
+	background: linear-gradient(to right, #00c6ff, #0072ff);
+	padding: 60px 20px;
+	text-align: center;
+	color: white;
+  }
+  
+  .like-box {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+  }
+  
+  .like-button {
+	background-color: white;
+	color: #e63946;
+	border: none;
+	border-radius: 50px;
+	font-size: 24px;
+	padding: 15px 30px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: transform 0.2s, background-color 0.3s;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .like-button:hover {
+	transform: scale(1.1);
+  }
+  
+  .like-button.clicked {
+	animation: pop 0.3s ease;
+  }
+  
+  @keyframes pop {
+	0%   { transform: scale(1); }
+	50%  { transform: scale(1.3); }
+	100% { transform: scale(1); }
+  }
+  
+  .section-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	position: relative;
+  }
