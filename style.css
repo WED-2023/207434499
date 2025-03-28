@@ -62,7 +62,7 @@ body {
   	padding-left: 60px;        /* space from the left edge */
   	padding-right: 40px; 
 	line-height: 1.6;
-	font-size: 25px;
+	font-size: 20px;
   }
 
 .section-title {
@@ -279,6 +279,7 @@ margin: 0 10px;
   }
   
   table {
+	font-family: inherit;
 	width: 100%;
 	border-collapse: collapse;
 	margin: auto;
@@ -327,4 +328,55 @@ margin: 0 10px;
   .use-case-item p {
 	font-size: 16px;
 	line-height: 1.6;
+  }
+
+
+  #contact {
+	padding: 60px 20px;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .contact-form label {
+	font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #00aaff;
+	border-radius: 6px;
+  }
+  
+  .contact-form button {
+	background-color: #00aaff;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+	background-color: #0077cc;
+  }
+
+  /*emoji*/
+  #emoji-picker {
+	margin-bottom: 15px;
+	padding: 8px 12px;
+	font-size: 16px;
+	border-radius: 6px;
   }

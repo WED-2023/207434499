@@ -39,3 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  //emoji handling
+  document.getElementById('emoji-picker').addEventListener('change', function () {
+    const emoji = this.value;
+    if (emoji) {
+      const textarea = document.getElementById('message');
+      textarea.value += emoji;
+      this.selectedIndex = 0; // reset dropdown
+    }
+  });
