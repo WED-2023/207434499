@@ -48,7 +48,7 @@ html {
 	height: 75px;
 	width: auto;
   	object-fit: contain;
-	margin-left: -30px;
+	margin-left: -38px;
   }
 
 body {
@@ -213,4 +213,118 @@ margin: 0 10px;
 	font-weight: bold;
 	margin-bottom: 10px;
 	position: relative;
+  }
+
+  /* QR code*/
+  .qr-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+  }
+  
+  .qr-box img {
+	width: 200px;
+	height: auto;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+  }
+  
+  .qr-box p {
+	font-size: 18px;
+	color: #333;
+  }
+
+  /*Q&A*/
+  .fancy-title {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+	background: linear-gradient(to right, #00aaff, #0072ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 30px;
+	margin-left: -500px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	position: relative;
+	padding-bottom: 10px;
+  }
+  
+  .fancy-title-use-case {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+	background: linear-gradient(to right, #00aaff, #0072ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 30px;
+	margin-left: -750px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	position: relative;
+	padding-bottom: 10px;
+  }
+  
+
+  #web-comparison {
+	padding: 60px 20px;
+	background-color: #f5f9ff;
+	text-align: center;
+  }
+  
+  .table-container {
+	overflow-x: auto;
+	margin-top: 30px;
+  }
+  
+  table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: auto;
+	max-width: 900px;
+	font-size: 16px;
+  }
+  
+  th, td {
+	border: 1px solid #00aaff;
+	padding: 12px 16px;
+	text-align: center;
+  }
+  
+  thead {
+	background-color: #00aaff;
+	color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+	background-color: #e6f7ff;
+  }
+  
+  .use-case-block {
+	margin-top: 30px;
+	text-align: left;
+	padding: 20px 30px;
+	border: 1px solid #00aaff;
+	border-radius: 12px;
+	max-width: 900px;
+	margin-left: 465px;
+	margin-right: auto;
+	box-shadow: 0 4px 16px rgba(0, 170, 255, 0.1);
+  }
+  
+  .use-case-item {
+	margin-bottom: 25px;
+	
+  }
+  
+  .use-case-item h3 {
+	color: #0072ff;
+	margin-bottom: 10px;
+	
+  }
+  
+  .use-case-item p {
+	font-size: 16px;
+	line-height: 1.6;
   }
