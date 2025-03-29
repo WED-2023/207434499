@@ -84,6 +84,47 @@ html {
 	line-height: 1.6;
 	font-size: 20px;
   }
+
+  .hobby-section {
+	margin-left: 100px; 
+  }
+  .hobby-container {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 20px 40px;
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+  .hobby-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	background-color: #f4faff;
+	padding: 20px;
+	border-left: 5px solid #00aaff;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 170, 255, 0.1);
+	margin-left: -350px;
+  }
+  
+  .hobby-item .emoji {
+	font-size: 32px;
+	line-height: 1;
+  }
+  
+  .hobby-item h3 {
+	margin: 0 0 6px;
+	color: #0077cc;
+	font-size: 20px;
+  }
+  
+  .hobby-item p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5;
+  }
   
   /* Photo Gallery */
   .slider-wrapper {
